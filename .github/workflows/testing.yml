@@ -7,16 +7,14 @@ jobs:
   tests:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [20.x, 18.x]
+  
 
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node ${{ matrix.node-version }}
+      - name: Set up mode.js
         uses: actions/setup-node@v1
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: '20.11.1'
       - name: Change directory to Frontend
         run: cd Frontend
       - name: npm install
