@@ -26,4 +26,5 @@ jobs:
       - name: Run tests
         run: |
           cd e19-CO328-ACES-Project-Fund-Requests/Frontend
+          npm install axios-mock-adapter --save-dev
           npm test
