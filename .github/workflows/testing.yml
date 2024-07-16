@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '20'  # Adjust to the correct Node.js version
+          node-version: '10'  # Adjust to the correct Node.js version
 
       - name: Install dependencies
         working-directory: Frontend  # Set the working directory for npm commands
