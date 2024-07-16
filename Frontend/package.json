@@ -63,12 +63,12 @@
     "typescript": "^5.4.5",
     "@babel/preset-react": "^7.15.0",
     "@babel/preset-typescript": "^7.15.0",
-    "babel-jest": "^27.0.6"
+    "babel-jest": "^27.0.6",
     "vite": "^4.5.3"
   },
    "jest": {
     "preset": "ts-jest",
     "testEnvironment": "jsdom"
-    // Other Jest configurations as needed
+    
   }
 }
