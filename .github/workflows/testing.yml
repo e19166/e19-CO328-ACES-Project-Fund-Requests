@@ -25,6 +25,7 @@ jobs:
           npm install --save-dev jest
           npm install --save-dev mongoose
           npm install --save-dev mongodb-memory-server
+          npm install --save-dev @babel/preset-react @babel/preset-typescript babel-jest
 
       - name: tests
         run: npm test
