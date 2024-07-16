@@ -11,12 +11,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          path: Frontend
       - name: Set up mode.js
         uses: actions/setup-node@v2
         with:
-          node-version: '20.11.1'
-      - name: Change directory to Frontend
-        run: cd Frontend
+          node-version: '20'
+      
       - name: npm install
         run: npm install
           
