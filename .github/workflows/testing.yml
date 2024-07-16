@@ -29,4 +29,4 @@ jobs:
           npm install --save-dev @babel/preset-react @babel/preset-typescript babel-jest
 
       - name: tests
-        run: npm test -- FooterSection
+        run: npx jest Frontend/src/test/FooterSection.test.tsx --config=jest.config.js
