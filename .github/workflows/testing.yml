@@ -24,5 +24,7 @@ jobs:
           npm ci
           npm install --save-dev jest
           npm install --save-dev mongoose
+          npm install --save-dev mongodb-memory-server
+
       - name: tests
         run: npm test
