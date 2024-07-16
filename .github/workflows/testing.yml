@@ -12,19 +12,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Set up mode.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: '20.11.1'
       - name: Change directory to Frontend
         run: cd Frontend
       - name: npm install
-        run: |
-          npm install
-          npm ci
-          npm install --save-dev jest
-          npm install --save-dev mongoose
-          npm install --save-dev mongodb-memory-server
-          npm install --save-dev @babel/preset-react @babel/preset-typescript babel-jest
+        run: npm install
+          
 
       - name: tests
-        run: npx jest src/test/FooterSection.test.tsx --config=jest.config.cjs
+        run: npm test
