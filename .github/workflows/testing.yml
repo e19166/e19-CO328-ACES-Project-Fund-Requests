@@ -23,5 +23,6 @@ jobs:
         run: |
           npm ci
           npm install --save-dev jest
+          npm install --save-dev mongoose
       - name: tests
         run: npm test
