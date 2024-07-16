@@ -10,12 +10,13 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        
+        with:
+          path: Frontend
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14'  # Adjust to the correct Node.js version
+          node-version: '10'  # Adjust to the correct Node.js version
 
       - name: Install dependencies
        
