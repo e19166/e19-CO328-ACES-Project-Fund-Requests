@@ -11,21 +11,19 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          path: Frontend/src/test
+          path: e19-CO328-ACES-Project-Fund-Requests  # Adjust to match your repository structure
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '10'  # Adjust to the correct Node.js version
+          node-version: '10'  # Adjust to the Node.js version used in your project
 
       - name: Install dependencies
-       
         run: |
-          cd Frontend
+          cd e19-CO328-ACES-Project-Fund-Requests/Frontend
           npm install
 
       - name: Run tests
-        
         run: |
-          cd Frontend
+          cd e19-CO328-ACES-Project-Fund-Requests/Frontend
           npm test
