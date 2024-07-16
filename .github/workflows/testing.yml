@@ -20,6 +20,8 @@ jobs:
       - name: Change directory to Frontend
         run: cd Frontend
       - name: npm install
-        run: npm ci
+        run: |
+          npm ci
+          npm install --save-dev jest
       - name: tests
         run: npm test
