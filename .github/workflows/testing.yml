@@ -21,6 +21,7 @@ jobs:
         run: cd Frontend
       - name: npm install
         run: |
+          npm install
           npm ci
           npm install --save-dev jest
           npm install --save-dev mongoose
