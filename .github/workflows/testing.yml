@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '10'  # Adjust to the Node.js version used in your project
+          node-version: '20'  # Adjust to the Node.js version used in your project
 
       - name: Install dependencies
         run: |
