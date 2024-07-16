@@ -24,4 +24,4 @@ jobs:
 
       - name: Run tests
         working-directory: Frontend  # Set the working directory for npm commands
-        run: npm test
+        run: npm test -- testFolder=src/test
