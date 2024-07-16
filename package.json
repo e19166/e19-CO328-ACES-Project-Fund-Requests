@@ -8,4 +8,8 @@
     "react-router-dom": "^6.23.1"
     
   }
+  "scripts": {
+    "test":"jest"
+  }
+  
 }
