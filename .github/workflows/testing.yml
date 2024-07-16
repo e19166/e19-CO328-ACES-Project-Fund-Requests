@@ -17,6 +17,9 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '20'
+
+      - name: change dr
+        run: cd Frontend
       
       - name: npm install
         run: npm install
